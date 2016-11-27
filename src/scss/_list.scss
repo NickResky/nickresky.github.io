@@ -1,0 +1,10 @@
+.list-page-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  .zenkit-section-component {
+      width: 300px;
+  }
+}
