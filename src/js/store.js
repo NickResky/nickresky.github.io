@@ -1,7 +1,7 @@
 import { combineReducers, createStore, applyMiddleware} from "redux";
 import { loadingBarMiddleware, loadingBarReducer } from 'react-redux-loading-bar';
 import logger from "redux-logger";
-import ListReducer from "./reducers/ListReducer";
+import listReducer from "./reducers/listReducer";
 import thunk from "redux-thunk";
 import promise from "redux-promise-middleware";
 
@@ -16,7 +16,7 @@ import promise from "redux-promise-middleware";
 const middleware = applyMiddleware(promise(), logger(), thunk, loadingBarMiddleware()/*, errorHandler*/);
 
 const reducers = combineReducers({
-	list: ListReducer//,
+	list: listReducer//,
 	//loadingBar: loadingBarReducer
 });
 
