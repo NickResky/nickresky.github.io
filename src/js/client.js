@@ -10,7 +10,7 @@ import SectionPage from "./pages/SectionPage";
 import store from "./store";
 import { Provider } from "react-redux";
 
-require('./../scss/style.scss');
+//require('./../scss/style.scss');
 
 const app = document.getElementById('app');
 
